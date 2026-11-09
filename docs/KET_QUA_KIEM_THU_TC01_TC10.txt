@@ -1,0 +1,26 @@
+================================================================================
+KẾT QUẢ KIỂM THỬ TÍCH HỢP HỆ THỐNG QUẢN LÝ TRUNG TÂM NGOẠI NGỮ (TC-01 -> TC-10)
+Nhóm thực hiện: Lê Khải Hoàn – Trần Hữu Long – Nguyễn Trọng Phúc | Mã môn: 502050
+================================================================================
+
+[PASS] TC-01 (Thêm học viên hợp lệ): Đã tạo hồ sơ HV009 - Ngô Gia Bảo thành công.
+[PASS] TC-02 (Nhập thiếu trường bắt buộc): Hệ thống chặn và báo lỗi đúng [TC-02 / BR-08]: Họ và tên học viên không được để trống!
+[PASS] TC-03 (Đăng ký vào lớp còn chỗ): Tạo đăng ký DK010 vào lớp TOEIC01 và tự động sinh học phí 3.000.000 VNĐ.
+[PASS] TC-04 (Đăng ký vào lớp đầy sĩ số): Hệ thống từ chối chính xác [TC-04 / BR-06]: Lớp GT-VIP01 đã đủ sĩ số tối đa (3/3). Hệ thống từ chối đăng ký!
+[PASS] TC-05 (Đăng ký trùng lớp): Hệ thống từ chối chính xác [TC-05 / BR-10]: Học viên Phạm Minh Anh đã có đăng ký hợp lệ (DK001) trong lớp TOEIC01!
+[PASS] TC-06 (Thanh toán một phần): Đã thu 1.000.000 VNĐ (Mã phiếu PT008), công nợ còn lại cập nhật đúng = 2.000.000 VNĐ.
+[PASS] TC-07 (Thanh toán vượt số dư): Hệ thống từ chối giao dịch chính xác [TC-07 / BR-18]: Số tiền thanh toán (2500000 VNĐ) vượt quá số tiền còn nợ (2000000 VNĐ)!
+[PASS] TC-08 (Điểm danh học viên hợp lệ): Lưu thành công trạng thái PRESENT cho HV001 tại Buổi 3 lớp TOEIC01.
+[PASS] TC-09 (Điểm danh trùng buổi): Cập nhật bản ghi hiện có sang ABSENT_EXCUSED, tổng số bản ghi giữ nguyên (9), không tạo bản ghi trùng.
+[PASS] TC-10 (Xem lại lịch sử): Truy xuất chính xác lịch sử 2 lần thanh toán của DK005 và tỷ lệ chuyên cần của HV001 (66,7%).
+
+--------------------------------------------------------------------------------
+KIỂM THỬ PHÂN QUYỀN & NGHIỆP VỤ VỚI 3 THÀNH VIÊN (HOÀN – LONG – PHÚC)
+--------------------------------------------------------------------------------
+[PASS] Hồ sơ 1 – Lê Khải Hoàn (thungan / CASHIER): Đăng nhập thành công, thu học phí hợp lệ và chặn đúng thao tác ngoài phân quyền [NFR-04].
+[PASS] Hồ sơ 2 – Nguyễn Trọng Phúc (daotao / TRAINING_STAFF): Đăng nhập thành công, quản lý đào tạo hợp lệ và chặn đúng thao tác thu ngân [NFR-04].
+[PASS] Hồ sơ 3 – Trần Hữu Long (admin / ADMIN): Đăng nhập thành công với toàn quyền quản trị hệ thống, giám sát báo cáo và cấu hình.
+
+--------------------------------------------------------------------------------
+TỔNG KẾT KIỂM THỬ: ĐẠT 10/10 TEST CASES & 3/3 HỒ SƠ THÀNH VIÊN (100% PASS)
+================================================================================
