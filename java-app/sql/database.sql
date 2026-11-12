@@ -193,7 +193,7 @@ CREATE TABLE password_reset_tokens (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ============================================================================
--- DỮ LIỆU MẪU PHỤC VỤ DEMO XUYÊN SUỐT (PHLINGO ACADEMY — v3.0)
+-- DỮ LIỆU MẪU PHỤC VỤ DEMO XUYÊN SUỐT (PHLINGO ACADEMY)
 -- ============================================================================
 
 -- Học viên mẫu (Khởi tạo trước để liên kết khóa ngoại student_id cho tài khoản học viên)
