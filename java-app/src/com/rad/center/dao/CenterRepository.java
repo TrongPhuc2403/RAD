@@ -82,6 +82,7 @@ public class CenterRepository implements Serializable {
             try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(STORE_PATH))) {
                 oos.writeObject(this);
             }
+            PhlingoSqlSync.syncAll(this);
         } catch (Exception e) {
             System.err.println("Cảnh báo lưu dữ liệu cục bộ: " + e.getMessage());
         }

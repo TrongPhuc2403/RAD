@@ -77,7 +77,11 @@ public class WebAppServer {
             }
 
             try {
-                if ("/api/bootstrap".equals(path) && "GET".equals(method)) {
+                if ("/api/health".equals(path) && "GET".equals(method)) {
+                    boolean sqlOk = com.rad.center.util.DatabaseConfig.isMysqlAvailable();
+                    String summary = com.rad.center.util.DatabaseConfig.getConnectionSummary().replace("\"", "\\\"");
+                    sendJson(ex, 200, "{\"ok\":true,\"database\":" + (sqlOk ? "\"mysql\"" : "\"local\"") + ",\"summary\":\"" + summary + "\"}");
+                } else if ("/api/bootstrap".equals(path) && "GET".equals(method)) {
                     sendJson(ex, 200, buildBootstrapJson());
                 } else if ("/api/login".equals(path) && "POST".equals(method)) {
                     User u = service.login(params.get("username"), params.get("password"));
