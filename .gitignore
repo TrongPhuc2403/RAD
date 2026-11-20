@@ -1,6 +1,9 @@
-﻿target/
+target/
+out/
+bin/
 *.class
 *.log
+*.zip
 .idea/
 .vscode/
 *.iml
