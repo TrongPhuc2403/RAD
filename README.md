@@ -7,13 +7,29 @@ Hệ thống quản lý toàn diện nghiệp vụ Trung tâm Ngoại ngữ **PH
 
 ---
 
-## 1. Nhóm Thực hiện Đề tài
+## 1. Nhóm Thực hiện & Phân công Công việc
 
-| Thành viên | Vai trò trong Đề tài | Tài khoản Demo (Web) | Phụ trách chính |
+| Thành viên | Tài khoản Demo (Web) | Phụ trách Chính | Phối hợp & Hỗ trợ |
 | :--- | :--- | :--- | :--- |
-| **Trần Hữu Long** | Quản trị viên (`ADMIN / QT`) | `admin` / `123456` | Kiến trúc 3 tầng Java, Web UI, Phân quyền RBAC (`UC-01, UC-02`), Xác thực OTP Gmail SMTP (`UC-12..17`), Đồng bộ JDBC SQL |
-| **Nguyễn Trọng Phúc** | Nhân viên Đào tạo (`TRAINING_STAFF / DT`) | `daotao` / `123456` | Quản lý Học viên (`UC-03`), Khóa học (`UC-04`), Lớp học & Sĩ số (`UC-05`), Ghi danh (`UC-06`), Buổi học (`UC-07`) |
-| **Lê Khải Hoàn** | Nhân viên Thu ngân (`CASHIER / TN`) | `thungan` / `123456` | Schema SQL 13 bảng (`PHLingoAcademy.sql`), REST API (`phlingo-api`), Thu học phí nhiều đợt & Công nợ (`UC-08, UC-09, UC-21`) |
+| **Nguyễn Trọng Phúc** | `daotao` / `123456` (`DT`) | Khảo sát & phân tích yêu cầu; Đặc tả `FR-01 → FR-18`, `NFR-01 → NFR-10`, MoSCoW, `BR-V3-01 → BR-V3-14`; Viết & tổng hợp báo cáo; Thiết kế Slide | Rà soát Use Case, Sequence/Activity, ERD, giao diện; Hỗ trợ dữ liệu mẫu & kiểm thử |
+| **Lê Khải Hoàn** | `thungan` / `123456` (`TN`) | Use Case Diagram & đặc tả (`UC-01 → UC-22`); Sơ đồ Sequence & Activity; Thiết kế ERD 13 bảng; Xây dựng SQL (`PHLingoAcademy.sql`) & REST API (`phlingo-api/`) | Rà soát đặc tả FR/NFR; Hỗ trợ CSDL cho lập trình Java & kiểm thử tích hợp |
+| **Trần Hữu Long** | `admin` / `123456` (`QT`) | Thiết kế giao diện Web (`prototype/`); Lập trình Java (`java-app/`), Email OTP Gmail SMTP (`SmtpMailer.java`), đồng bộ JDBC (`PhlingoSqlSync.java`); Kiểm thử tích hợp & Demo | Hỗ trợ khảo sát yêu cầu, UML, ERD; Cung cấp nội dung & hình demo cho báo cáo/slide |
+
+### Bảng Phân công Chi tiết theo Hạng mục
+
+| Hạng mục | Nguyễn Trọng Phúc | Lê Khải Hoàn | Trần Hữu Long |
+| :--- | :---: | :---: | :---: |
+| Khảo sát và phân tích yêu cầu | **Chính** | Hỗ trợ | Hỗ trợ |
+| Đặc tả FR, NFR, MoSCoW | **Chính** | Rà soát | Rà soát |
+| Use Case Diagram và đặc tả | Rà soát | **Chính** | Hỗ trợ |
+| Sequence / Activity Diagram | Rà soát | **Chính** | Hỗ trợ |
+| ERD và thiết kế CSDL | Rà soát | **Chính** | Hỗ trợ |
+| SQL (`PHLingoAcademy.sql`) & REST API (`phlingo-api`) | Hỗ trợ | **Chính** | Tích hợp |
+| Thiết kế giao diện (`prototype/`) | Rà soát | Hỗ trợ | **Chính** |
+| Lập trình Java (`java-app/`) | Hỗ trợ kiểm thử | Hỗ trợ CSDL | **Chính** |
+| Kiểm thử tích hợp & Demo | Phối hợp | Phối hợp | **Chính** |
+| Viết và tổng hợp báo cáo | **Chính** | Cung cấp nội dung | Cung cấp nội dung |
+| Thiết kế slide & Thuyết trình | **Chính** (4 phút) | Cung cấp sơ đồ (4 phút) | Cung cấp hình demo (5–6 phút) |
 
 ---
 
